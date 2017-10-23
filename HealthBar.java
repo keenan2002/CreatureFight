@@ -204,7 +204,7 @@ public class HealthBar extends Actor
      */
     public void setCurrent( int c )
     {
-      current = c;
+        current = c;
     }
 
     /**
