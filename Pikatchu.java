@@ -10,7 +10,7 @@ public class Pikatchu extends Creature
 {
     public Pikatchu (World w)
     {
-        super(700, 2, "Electric");
+        super(700, false, "Electric");
         getImage().scale(150, 100);
         w.addObject(getHealthBar(), 450, w.getHeight() -680);
     }
@@ -45,6 +45,6 @@ public class Pikatchu extends Creature
         {
             enemy.getHealthBar().add(-65);
         }
-        playerWorld.setTurnNumber(2);
+        playerWorld.setTurnNumber(true);
     }
 }

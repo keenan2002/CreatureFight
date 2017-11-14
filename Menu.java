@@ -61,16 +61,16 @@ public class Menu extends Actor
         CreatureWorld world=(CreatureWorld)getWorld();
         int distance;
         
-        if(world.getTurnNumber() == 1)
+        if(world.getPlayerOneTurn() ==true)
         {
     
             if (titleBar.getText().equalsIgnoreCase("fight") )
             {
-                distance = 300;
+                distance = 280;
             }
             else
             {
-                distance = 450;
+                distance = 430;
             }
             
         }
@@ -78,11 +78,11 @@ public class Menu extends Actor
         {
             if (titleBar.getText().equalsIgnoreCase("fight") )
             {
-                distance = 750;
+                distance = 730;
             }
             else
             {
-                distance = 450;
+                distance = 430;
             }
         }
             
